@@ -1253,7 +1253,7 @@
                     }
                 ],
                 "success_criteria": [
-                    { 
+                    {
                         "ref_id": "2.4.1",
                         "title": "Bypass Blocks",
                         "description": "A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.",
@@ -1555,7 +1555,7 @@
                     }
                 ],
                 "success_criteria": [
-                    { 
+                    {
                         "ref_id": "2.5.1",
                         "title": "Pointer Gestures",
                         "description": "All functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential.",
@@ -1578,7 +1578,7 @@
                             }
                         ]
                     },
-                    { 
+                    {
                         "ref_id": "2.5.2",
                         "title": "Pointer Cancellation",
                         "description": "For functionality that can be operated using a single pointer, at least one of the following is true:",
@@ -1625,7 +1625,7 @@
                             }
                         ]
                     },
-                    { 
+                    {
                         "ref_id": "2.5.3",
                         "title": "Label in Name",
                         "description": "For user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
@@ -1648,7 +1648,7 @@
                             }
                         ]
                     },
-                    { 
+                    {
                         "ref_id": "2.5.4",
                         "title": "Motion Actuation",
                         "description": "Functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when:",
@@ -1678,7 +1678,7 @@
                             }
                         ]
                     },
-                    { 
+                    {
                         "ref_id": "2.5.5",
                         "title": "Target Size",
                         "description": "The size of the target for pointer inputs is at least 44 by 44 CSS pixels except when:",
@@ -1725,7 +1725,7 @@
                             }
                         ]
                     },
-                    { 
+                    {
                         "ref_id": "2.5.6",
                         "title": "Concurrent Input Mechanisms",
                         "description": "Web content does not restrict use of input modalities available on a platform except where the restriction is essential, required to ensure the security of the content, or required to respect user settings.",
@@ -1744,7 +1744,7 @@
                             }
                         ]
                     },
-                    { 
+                    {
                         "ref_id": "2.5.7",
                         "title": "Dragging Movements",
                         "description": "All functionality that uses a dragging movement for operation can be achieved by a single pointer without dragging, unless dragging is essential or the functionality is determined by the user agent and not modified by the author.",
@@ -1767,7 +1767,7 @@
                             }
                         ]
                     },
-                    { 
+                    {
                         "ref_id": "2.5.8",
                         "title": "Target Size (Minimum)",
                         "description": "The size of the target for pointer inputs is at least 24 by 24 CSS pixels, except where:",
@@ -2064,23 +2064,22 @@
                         "url": "https://www.w3.org/TR/WCAG22/#consistent-help",
                         "level": "A",
                         "special_cases": [
-                            
-                                {
-                                    "type": "at_least_one",
-                                    "title": "Human contact details;"
-                                },
-                                {
-                                    "type": "at_least_one",
-                                    "title": "Human contact mechanism;"
-                                },
-                                {
-                                    "type": "at_least_one",
-                                    "title": "Self-help option;"
-                                },
-                                {
-                                    "type": "at_least_one",
-                                    "title": "A fully automated contact mechanism."
-                                }
+                            {
+                                "type": "at_least_one",
+                                "title": "Human contact details;"
+                            },
+                            {
+                                "type": "at_least_one",
+                                "title": "Human contact mechanism;"
+                            },
+                            {
+                                "type": "at_least_one",
+                                "title": "Self-help option;"
+                            },
+                            {
+                                "type": "at_least_one",
+                                "title": "A fully automated contact mechanism."
+                            }
                         ],
                         "notes": [
                             {

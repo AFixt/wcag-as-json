@@ -6,32 +6,16 @@
     "properties": {
         "type": "object",
         "properties": {
-            "required": [
-                "ref_id",
-                "title",
-                "url",
-                "description",
-                "guidelines"
-            ],
+            "required": ["ref_id", "title", "url", "description", "guidelines"],
             "ref_id": {
                 "type": "string",
                 "description": "Unique numeric identifier for the Principle",
-                "enum": [
-                    "1",
-                    "2",
-                    "3",
-                    "4"
-                ]
+                "enum": ["1", "2", "3", "4"]
             },
             "title": {
                 "type": "string",
                 "description": "Title for the Principle",
-                "enum": [
-                    "Perceivable",
-                    "Operable",
-                    "Understandable",
-                    "Robust"
-                ]
+                "enum": ["Perceivable", "Operable", "Understandable", "Robust"]
             },
             "url": {
                 "type": "string",
@@ -96,10 +80,7 @@
                                 "description": "Fully qualified URL at which the reference information exists."
                             }
                         },
-                        "required": [
-                            "title",
-                            "url"
-                        ]
+                        "required": ["title", "url"]
                     },
                     "success_criteria": {
                         "type": "array",
@@ -132,20 +113,13 @@
                             "level": {
                                 "type": "string",
                                 "description": "Indicates the appropriate conformance level for this success criteria",
-                                "enum": [
-                                    "A",
-                                    "AA",
-                                    "AAA"
-                                ]
+                                "enum": ["A", "AA", "AAA"]
                             },
                             "references": {
                                 "type": "array",
                                 "description": "Array of references relating to this success criteria",
                                 "properties": {
-                                    "required": [
-                                        "title",
-                                        "url"
-                                    ],
+                                    "required": ["title", "url"],
                                     "title": {
                                         "type": "string",
                                         "description": "Name or title of the external reference resource"
@@ -170,9 +144,7 @@
                                 "type": "array",
                                 "properties": {
                                     "type": "string",
-                                    "required": [
-                                        "title"
-                                    ],
+                                    "required": ["title"],
                                     "title": {
                                         "type": "string",
                                         "description": "Title for the special case"
