@@ -1,36 +1,44 @@
 {
-  "name": "wcag-as-json",
-  "version": "2.2.0",
-  "description": "WCAG 2.2 Web Content Accessibility Guidelines in JSON format",
-  "main": "wcag.json",
-  "contributors": [
-    "Karl Groves <karl@karlgroves.com> (https://github.com/karlgroves)"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:karlgroves/wcag-as-json.git"
-  },
-  "bugs": {
-    "url": "https://github.com/karlgroves/wcag-as-json/issues"
-  },
-  "license": "MIT",
-  "engines": {
-    "node": ">= 14.0.0"
-  },
-  "scripts": {
-    "test": "npm run validate",
-    "validate": "npm run validate:json && npm run validate:schema",
-    "validate:json": "node -e \"try { JSON.parse(require('fs').readFileSync('./wcag.json', 'utf8')); console.log('✓ wcag.json is valid JSON'); } catch(e) { console.error('✗ wcag.json is invalid:', e.message); process.exit(1); }\"",
-    "validate:schema": "node -e \"try { JSON.parse(require('fs').readFileSync('./wcag-schema.json', 'utf8')); console.log('✓ wcag-schema.json is valid JSON'); } catch(e) { console.error('✗ wcag-schema.json is invalid:', e.message); process.exit(1); }\"",
-    "format": "npx prettier --write \"*.json\"",
-    "format:check": "npx prettier --check \"*.json\""
-  },
-  "keywords": [
-    "wcag",
-    "wcag22",
-    "accessibility",
-    "a11y",
-    "web-accessibility",
-    "json"
-  ]
+    "name": "wcag-as-json",
+    "version": "1.0.0",
+    "description": "WCAG 2.2 Web Content Accessibility Guidelines in JSON format",
+    "main": "wcag.json",
+    "contributors": [
+        "Karl Groves <karl@karlgroves.com> (https://github.com/karlgroves)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:karlgroves/wcag-as-json.git"
+    },
+    "bugs": {
+        "url": "https://github.com/karlgroves/wcag-as-json/issues"
+    },
+    "license": "MIT",
+    "engines": {
+        "node": ">= 14.0.0"
+    },
+    "scripts": {
+        "test": "npm run validate",
+        "validate": "npm run validate:json && npm run validate:schema",
+        "validate:json": "node -e \"try { JSON.parse(require('fs').readFileSync('./wcag.json', 'utf8')); console.log('✓ wcag.json is valid JSON'); } catch(e) { console.error('✗ wcag.json is invalid:', e.message); process.exit(1); }\"",
+        "validate:schema": "node -e \"try { JSON.parse(require('fs').readFileSync('./wcag-schema.json', 'utf8')); console.log('✓ wcag-schema.json is invalid:', e.message); process.exit(1); }\"",
+        "format": "npx prettier --write \"*.json\"",
+        "format:check": "npx prettier --check \"*.json\"",
+        "release": "standard-version",
+        "release:minor": "standard-version --release-as minor",
+        "release:major": "standard-version --release-as major",
+        "release:patch": "standard-version --release-as patch",
+        "release:dry-run": "standard-version --dry-run"
+    },
+    "devDependencies": {
+        "standard-version": "^9.5.0"
+    },
+    "keywords": [
+        "wcag",
+        "wcag22",
+        "accessibility",
+        "a11y",
+        "web-accessibility",
+        "json"
+    ]
 }

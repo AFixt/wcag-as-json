@@ -1,0 +1,16 @@
+{
+    "types": [
+        { "type": "feat", "section": "Features" },
+        { "type": "fix", "section": "Bug Fixes" },
+        { "type": "data", "section": "Data Updates" },
+        { "type": "docs", "section": "Documentation" },
+        { "type": "chore", "hidden": true },
+        { "type": "style", "hidden": true },
+        { "type": "refactor", "section": "Code Refactoring" },
+        { "type": "perf", "section": "Performance Improvements" },
+        { "type": "test", "hidden": true }
+    ],
+    "commitUrlFormat": "https://github.com/karlgroves/wcag-as-json/commit/{{hash}}",
+    "compareUrlFormat": "https://github.com/karlgroves/wcag-as-json/compare/{{previousTag}}...{{currentTag}}",
+    "issueUrlFormat": "https://github.com/karlgroves/wcag-as-json/issues/{{id}}"
+}
