@@ -21,7 +21,7 @@
     "test": "npm run validate",
     "validate": "npm run validate:json && npm run validate:schema",
     "validate:json": "node -e \"try { JSON.parse(require('fs').readFileSync('./wcag.json', 'utf8')); console.log('✓ wcag.json is valid JSON'); } catch(e) { console.error('✗ wcag.json is invalid:', e.message); process.exit(1); }\"",
-    "validate:schema": "node -e \"try { JSON.parse(require('fs').readFileSync('./wcag-schema.json', 'utf8')); console.log('✓ wcag-schema.json is invalid:', e.message); process.exit(1); }\"",
+    "validate:schema": "node -e \"try { JSON.parse(require('fs').readFileSync('./wcag-schema.json', 'utf8')); console.log('✓ wcag-schema.json is valid JSON'); } catch(e) { console.error('✗ wcag-schema.json is invalid:', e.message); process.exit(1); }\"",
     "format": "prettier --write \"*.json\"",
     "format:check": "prettier --check \"*.json\"",
     "lint:md": "markdownlint '**/*.md' --ignore node_modules --ignore '**/CHANGELOG.md'",
