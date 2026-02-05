@@ -2,6 +2,7 @@
 node_modules
 .DS_Store
 .npmrc
+reports/
 
 ### PHP storm ###
 .idea
