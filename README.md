@@ -16,13 +16,13 @@ In this JSON format the Success Criteria themselves have been broken down furthe
 
 * Special Cases - additional considerations on the applicability of the SC. There are 3 types of special cases
   * `exception` - the special case, if satisfied, creates an exception whereby the SC does not apply
-  * `at_least_one` - at least one of the special cases must apply 
-  * `all_true` - all of the special cases must apply 
+  * `at_least_one` - at least one of the special cases must apply
+  * `all_true` - all of the special cases must apply
 * Notes - any other notes that accompany the SC
 
 A full WCAG SC Entry looks like this:
 
-```
+```json
 {
     "ref_id": "4.1.2",
     "title": "Name, Role, Value",
@@ -50,6 +50,7 @@ A full WCAG SC Entry looks like this:
 ```
 
 ## License
+
 The JSON formatted document has an MIT license.
 
-This software or document includes material copied from or derived from Web Content Accessibility Guidelines (WCAG) 2.2 https://www.w3.org/TR/WCAG22/. Copyright © 2008 W3C® (MIT, ERCIM, Keio, Beihang).
+This software or document includes material copied from or derived from [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/). Copyright &copy; 2008 W3C&reg; (MIT, ERCIM, Keio, Beihang).
