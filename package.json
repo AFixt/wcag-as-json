@@ -31,12 +31,19 @@
     "release:minor": "standard-version --release-as minor",
     "release:major": "standard-version --release-as major",
     "release:patch": "standard-version --release-as patch",
-    "release:dry-run": "standard-version --dry-run"
+    "release:dry-run": "standard-version --dry-run",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "markdownlint-cli": "^0.43.0",
     "prettier": "^3.4.2",
     "standard-version": "^9.5.0"
+  },
+  "lint-staged": {
+    "*.json": "prettier --write",
+    "*.md": "markdownlint --ignore node_modules --ignore '**/CHANGELOG.md'"
   },
   "keywords": [
     "wcag",
