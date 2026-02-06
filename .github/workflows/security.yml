@@ -45,23 +45,8 @@ jobs:
           path: npm-audit-results.json
           retention-days: 30
 
-  # CodeQL Analysis (SAST)
-  codeql:
-    name: CodeQL Analysis
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3
-        with:
-          languages: javascript-typescript
-          queries: security-and-quality
-
-      - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v3
-        with:
-          category: "/language:javascript-typescript"
+  # NOTE: CodeQL SAST removed — no JavaScript/TypeScript source code in this project.
+  # Re-add the codeql job if JS/TS source files are introduced in the future.
 
   # OWASP Dependency Check (comprehensive - weekly only)
   owasp-dependency-check:
