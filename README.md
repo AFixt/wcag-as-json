@@ -1,5 +1,14 @@
 # WCAG as JSON
 
+> [!WARNING]
+> **This project is stale and no longer maintained.**
+>
+> If you are looking for a JSON representation of WCAG, please use the officially maintained version from the W3C instead:
+>
+> **<https://github.com/w3c/wcag/tree/main/11ty/json>**
+>
+> This repository is left online for historical reference only and will not receive further updates.
+
 This is a JSON formatted version of WCAG 2.2
 
 We created this as a way to be able to quickly insert references to WCAG-related information into other documents.
